@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color = "primary">
+    <ion-title>
+      VO2 Max
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button *ngIf="ba" (click)="ir(ingresar)">
+        Ingresar
+      </button>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+<ion-card>
+  <img width="80" height="300" src="assets/imgs/logovo2.jpg">
+</ion-card>
+<!-- <ion-card> -->
+<ion-list no-lines>
+    <ion-item (click)="ir(reserva)">
+      <ion-avatar item-start>
+                <img src="assets/imgs/calendario.jpg">
+      </ion-avatar>
+      Reservar
+    </ion-item>
+  <ion-item (click)= "ir(wod)">
+      <ion-avatar item-start>
+                <img src="assets/imgs/levantamiento1.png">
+      </ion-avatar>
+      Work of Day
+    </ion-item>
+
+
+
+    <ion-item (click)="ir(puntaje)">
+      <ion-avatar item-start>
+                <img src="assets/imgs/notas.png">
+      </ion-avatar>
+      Mis Marcas
+    </ion-item>
+
+    <ion-item (click) = "ir(fotodia)">
+      <ion-avatar item-start>
+                <img src="assets/imgs/fotos.jpg">
+      </ion-avatar>
+      Foto del dia
+    </ion-item>
+
+    <ion-item (click) = "ir(fotoatleta)">
+      <ion-avatar item-start>
+                <img src="assets/imgs/atleta1.jpg">
+      </ion-avatar>
+      Atleta de la semana
+    </ion-item>
+
+</ion-list>
+  <!-- </ion-card> -->
+</ion-content>

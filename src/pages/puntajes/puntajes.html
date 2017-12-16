@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>Puntajes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding>
+
+
+  <ion-item-group>
+    <ion-item-divider (click) = "cambiar('po')" color ="light"> POWER LIFTING
+            <ion-icon *ngIf="!power" name = "ios-arrow-dropdown-outline" item-end></ion-icon>
+            <ion-icon *ngIf="power" name = "ios-arrow-dropup-outline" item-end></ion-icon>
+    </ion-item-divider>
+      <ion-item *ngIf="power" (click) = "alert('Back Squat', 'bs')"> Back Squat <label item-end>{{bs}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Front Squat', 'fs')"> Front Squat <label item-end>{{fs}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Over Head Squat', 'ohs')"> Over Head Squat <label item-end>{{ohs}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Bench Press', ' benchp')"> Bench Press <label item-end>{{benchp}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Push Press', 'pushp')"> Push Press <label item-end>{{pushp}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Dead Lift', 'dl')"> Dead Lift <label item-end>{{dl}} Kg</label> </ion-item>
+      <ion-item *ngIf="power" (click) = "alert('Weighted Pull Up', 'pullup')"> Weighted Pull Up <label item-end>{{pullup}} Kg</label> </ion-item>
+
+    <ion-item-divider (click) = "cambiar('we')" color ="light">WEIGHT LIFTING
+          <ion-icon *ngIf="!weight" name = "ios-arrow-dropdown-outline" item-end></ion-icon>
+          <ion-icon *ngIf="weight" name = "ios-arrow-dropup-outline" item-end></ion-icon>
+    </ion-item-divider>
+      <ion-item *ngIf="weight" (click) = "alert('Snatch', 'snatch')"> Snatch <label item-end>{{snatch}} Kg</label> </ion-item>
+      <ion-item *ngIf="weight" (click) = "alert('Clean', 'clean')"> Clean <label item-end>{{clean}} Kg</label> </ion-item>
+      <ion-item *ngIf="weight" (click) = "alert('Clean and Jerk', 'cleanj')"> Clean and Jerk <label item-end>{{cleanj}} Kg</label> </ion-item>
+      <ion-item *ngIf="weight" (click) = "alert('Split Jerk', 'sjerk')"> Split Jerk <label item-end>{{sjerk}} Kg</label> </ion-item>
+      <ion-item *ngIf="weight" (click) = "alert('Push Jerk', 'pjerk')"> Push Jerk <label item-end>{{pjerk}} Kg</label> </ion-item>
+
+    <ion-item-divider (click) = "cambiar('wo')" color ="light">WODS
+          <ion-icon *ngIf="!weight" name = "ios-arrow-dropdown-outline" item-end></ion-icon>
+          <ion-icon *ngIf="weight" name = "ios-arrow-dropup-outline" item-end></ion-icon>
+    </ion-item-divider>
+      <ion-item *ngIf="wod" (click) = "alert('ADAMBROWN', 'adambrown')"> ADAMBROWN <label item-end>{{adambrown}} Kg</label>  </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('ADRIAN', 'adrian')"> ADRIAN <label item-end>{{adrian}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('ALEXANDER', 'alexander')"> ALEXANDER <label item-end>{{alexander}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('AMANDA', 'amanda')"> AMANDA <label item-end>{{amanda}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('ANGIE', 'angie')"> ANGIE <label item-end>{{angie}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('ANNIE', 'annie')"> ANNIE <label item-end>{{annie}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('ARNIE', 'arnie')"> ARNIE <label item-end>{{arnie}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('BARBARA', 'barbara')"> BARBARA <label item-end>{{barbara}} Kg</label> </ion-item>
+      <ion-item *ngIf="wod" (click) = "alert('BLAKE', 'blake')"> BLAKE <label item-end>{{blake}} Kg</label> </ion-item>
+
+  </ion-item-group>
+</ion-content>

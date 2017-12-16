@@ -1,0 +1,8 @@
+{
+  "name": "VO2Max",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
